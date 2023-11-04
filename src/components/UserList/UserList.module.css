@@ -1,0 +1,38 @@
+/* I din CSS-fil eller i en style-tag i din komponent */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  
+.deleteConfirmation {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+  
+  th, td {
+    color: #3c425c;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table button {
+    margin-left: 10px;
+  }
+
+  tr:nth-child(even) {
+    background-color: white;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #f2f2f2; 
+  }
+  /* Lägg till större mellanrum mellan raderna här */
+  tr {
+    line-height: 2; /* Justera detta värde för önskat avstånd mellan raderna */
+  }
+  
