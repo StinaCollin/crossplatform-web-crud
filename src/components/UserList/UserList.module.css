@@ -17,7 +17,32 @@ table {
     font-weight: 600;
     font-size: 0.8rem;
     padding: 10px;
-    text-align: left;
+    text-align: center;
+  }
+
+  .headertd {
+    color: #3c425c;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+  h2 {
+    color: (255,255,255,.9);
+  }
+
+  .refetchButton {
+    background-color: rgba(255,255,255,.9);
+    margin-top: 0.5rem;	
+    color: #3c425c;
+    border: none;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.5rem 1.6rem;	
+    border-radius: 0.4rem;
+    font-family: verdana;
+    box-shadow: 0 0.1rem 0.4rem -0.2rem rgba(0,0,0,.8);	
+    transition: all 0.2s ease-in-out;
   }
   
   table button {
@@ -31,8 +56,8 @@ table {
   tr:nth-child(odd) {
     background-color: #f2f2f2; 
   }
-  /* Lägg till större mellanrum mellan raderna här */
+ 
   tr {
-    line-height: 2; /* Justera detta värde för önskat avstånd mellan raderna */
+    line-height: 2; 
   }
   

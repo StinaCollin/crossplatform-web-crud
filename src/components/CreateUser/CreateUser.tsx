@@ -30,7 +30,7 @@ export const CreateUser = () => {
 
 		} else {
 			setSubmitted(false)
-			setFeedback('Du måste fylla i alla fält!')
+			setFeedback('Du behöver fylla i alla fält!')
 		}
 	}	
 
@@ -38,20 +38,20 @@ export const CreateUser = () => {
 		<div className={styles.container}>
 			<TextInput
 				value={firstName}	
-				placeholder="Firstname"
+				placeholder="Förnamn"
 				onInput={(event) => {
 					setFirstName(event.target.value)
 				}}
 			/>
 			<TextInput
 				value={lastName}
-				placeholder="Lastname"
+				placeholder="Efternamn"
 				onInput={(event) => {
 					setLastName(event.target.value)
 				}}
 			/>
 			<button className={styles.submitButton} onClick={submitHandler}>Lägg till användare</button>	
-			<p className={styles.feedbackText} style={{ color: submitted ? '#3c425c' : '#ed4e59' }}>{feedback}</p>
+			<p className={styles.feedbackText} style={{ color: submitted ? 'green' : 'red' }}>{feedback}</p>
 		</div>
 	)
 }

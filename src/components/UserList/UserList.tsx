@@ -41,17 +41,17 @@ export const UserList = () => {
   };
 
   if (isLoading) {
-    return <div>User List is Loading...</div>;
+    return <div>Användarlistan laddar...</div>;
   }
 
   return (
     <div>
-      <h2>User List: </h2>
+      <h2>Användarlista: </h2>
       <table>
         <thead>
           <tr>
-            <th>Förnamn </th>
-            <th>Efternamn</th>
+            <th className={styles.headertd}>Förnamn </th>
+            <th className={styles.headertd}>Efternamn</th>
           </tr>
         </thead>
         <tbody>
@@ -63,7 +63,7 @@ export const UserList = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={() => refetch()}>Reload</button>
+      <button  className={styles.refetchButton} onClick={() => refetch()}>Reload</button>
 
       {isModalOpen && (
         <Modal
